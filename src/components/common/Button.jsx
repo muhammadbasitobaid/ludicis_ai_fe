@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 
-const Button = ({ variant, children, iconStart, iconEnd, ...props }) => {
+const Button = ({ variant, children, iconStart = null, iconEnd = null, ...props }) => {
   const buttonClass = clsx(
-    'rounded-full flex items-center justify-center px-4 py-2 transition-colors duration-300',
+    'font-medium text-xs rounded-full flex items-center justify-center px-6 py-2 transition-colors duration-300',
     {
       'bg-primary text-white hover:bg-primaryHover': variant === 'primary',
-      'bg-transparent border border-gray text-black hover:border-grayHover hover:text-grayHover': variant === 'secondary',
+      'bg-transparent border border-lightGray text-black hover:border-grayHover hover:text-grayHover': variant === 'secondary',
       'bg-faded-gradient text-black hover:bg-faded-gradient-hover': variant === 'gradient',
     }
   );
@@ -28,9 +28,5 @@ Button.propTypes = {
   iconEnd: PropTypes.node,
 };
 
-Button.defaultProps = {
-  iconStart: null,
-  iconEnd: null,
-};
 
 export default Button;

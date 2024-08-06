@@ -12,6 +12,7 @@ export default {
         orange: '#FFBD59',
         orangeHover: '#e6a847', // Darkened orange color
         gray: '#70747B',
+        lightGray: '#ACACAC',
         grayHover: '#5d6066', // Darkened gray color
       },
       fontSize: {
@@ -19,6 +20,7 @@ export default {
         'lg': '52px',
         'md': '48px',
         'sm': '20px',
+        'xs': '16px',
       },
       backgroundImage: {
         'faded-gradient': 'linear-gradient(to right, rgba(0, 74, 173, 0.3), rgba(255, 189, 89, 0.3))',
