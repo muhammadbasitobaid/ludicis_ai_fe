@@ -2,14 +2,16 @@ import Button from "./components/common/Button"
 import Heading from "./components/common/Heading"
 import Image from "./components/common/Image"
 import Link from "./components/common/Link"
+import HeroSection from "./components/HeroSection"
 import Navbar from "./components/Navbar"
 
 function App() {
 
   return (
-    <>
+    <div  className="bg-bgGray">
     <Navbar />
-    <div className="mt-36">
+    <HeroSection/>
+    <div>
 
       <div className="text-3xl text-red-500">Hello World!</div>
       <Heading variant="xl" level={1}>Heading XL</Heading>
@@ -50,7 +52,7 @@ function App() {
       <Link text="Secondary Link" href="#" />
     </div>
     </div>
-    </>
+    </div>
   )
 }
 

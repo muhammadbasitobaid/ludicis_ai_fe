@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 
-const Paragraph = ({ variant = 'sm', children, className, ...props }) => {
+const Paragraph = ({ variant = 'sm', children="", className, ...props }) => {
   const paragraphClass = clsx(
     'text-center text-gray',
     {
@@ -26,8 +26,5 @@ Paragraph.propTypes = {
   className: PropTypes.string,
 };
 
-Paragraph.defaultProps = {
-  className: '',
-};
 
 export default Paragraph;
