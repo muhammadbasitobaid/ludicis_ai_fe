@@ -1,4 +1,5 @@
 import Button from "./components/common/Button"
+import GridSystem from "./components/common/GridSystem"
 import Heading from "./components/common/Heading"
 import Image from "./components/common/Image"
 import Link from "./components/common/Link"
@@ -11,6 +12,7 @@ function App() {
     <div  className="bg-bgGray">
     <Navbar />
     <HeroSection/>
+    <GridSystem/>
     <div>
 
       <div className="text-3xl text-red-500">Hello World!</div>

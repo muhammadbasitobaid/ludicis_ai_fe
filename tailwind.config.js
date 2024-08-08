@@ -27,6 +27,9 @@ export default {
         'faded-gradient': 'linear-gradient(to right, rgba(0, 74, 173, 0.3), rgba(255, 189, 89, 0.3))',
         'faded-gradient-hover': 'linear-gradient(to right, rgba(0, 59, 139, 0.2), rgba(230, 168, 71, 0.2))', // Darkened gradient
       },
+      gridTemplateColumns: {
+        'custom': '11.45% 25.7% 25.7% 25.7% 11.45%',
+      }
     },
   },
   plugins: [],
