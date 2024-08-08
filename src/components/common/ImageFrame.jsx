@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 
-const ImageFrame = ({ src, alt, className, ...props }) => {
+const ImageFrame = ({ src, alt, className='', ...props }) => {
   const frameClass = clsx(
     'w-full p-4 rounded-[50px] overflow-hidden bg-faded-gradient',
     className
@@ -21,8 +21,5 @@ ImageFrame.propTypes = {
   className: PropTypes.string,
 };
 
-ImageFrame.defaultProps = {
-  className: '',
-};
 
 export default ImageFrame;

@@ -43,7 +43,7 @@ const HeroHeader = ({ className = '', ...props }) => {
 
             {/* Third Row */}
             <div className="flex justify-center w-[60%] mx-auto">
-                <Paragraph variant='sm'>
+                <Paragraph variant='sm' className='text-center text-gray font-bold	'>
                     In today's data-driven world, information is your most valuable asset. But what happens when that information is locked away in complex documents, unstructured data, or legacy formats? Enter <span className='font-bold'>Lucidis.ai</span> – your key to unlocking the full potential of your organization's data.
                 </Paragraph>
             </div>

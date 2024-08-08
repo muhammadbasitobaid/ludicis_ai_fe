@@ -14,7 +14,8 @@ export default {
         gray: '#70747B',
         lightGray: '#ACACAC',
         grayHover: '#5d6066', // Darkened gray color
-        bgGray: '#F7F7F8'
+        bgGray: '#F7F7F8',
+        slate: '#DADADA'
       },
       fontSize: {
         'xl': '64px',

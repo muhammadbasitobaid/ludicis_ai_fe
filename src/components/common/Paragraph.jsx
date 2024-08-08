@@ -1,21 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
+import parse from 'html-react-parser';
 
 const Paragraph = ({ variant = 'sm', children="", className, ...props }) => {
   const paragraphClass = clsx(
-    'text-center text-gray',
+    'text-gray',
     {
-      'text-sm': variant === 'sm',
-      'text-md': variant === 'md',
-      'text-lg': variant === 'lg',
+      'text-base': variant === 'sm',
+      'text-[18px]': variant === 'md',
+      'text-[20px]': variant === 'lg',
     },
     className
   );
 
   return (
     <p className={paragraphClass} {...props}>
-      {children}
+      {typeof children === 'string' ? parse(children) : children}
     </p>
   );
 };

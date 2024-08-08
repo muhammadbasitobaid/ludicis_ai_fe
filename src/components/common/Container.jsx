@@ -7,7 +7,7 @@ const Container = ({ children, className = "", sticky = false, ...props }) => {
     'max-w-[77.2%] mx-auto',
     className,
     {
-      'sticky top-4': sticky
+      'sticky z-50 top-4': sticky
     }
   );
 
@@ -24,9 +24,5 @@ Container.propTypes = {
   sticky: PropTypes.bool,
 };
 
-Container.defaultProps = {
-  className: '',
-  sticky: false,
-};
 
 export default Container;
