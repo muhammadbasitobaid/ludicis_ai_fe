@@ -18,26 +18,26 @@ const HeroHeader = ({ className = '', ...props }) => {
             {/* First Row */}
             <div className="flex gap-4 items-center w-full">
                 <div className="">
-                    <HeroLabel text='Fast' />
+                    {/* <HeroLabel text='Fast' /> */}
                 </div>
                 <div className="flex-grow flex justify-center">
                     <Button variant="gradient" iconStart={<Image src={"/icons/sparkles.svg"} alt="sparkles" />} iconEnd={<Image src={"/icons/arrow_right_black.svg"} alt="arrow_right_black" />}>Unleash the Power of Your Documents</Button>
                 </div>
                 <div className="">
-                    <HeroLabel text='Professional' />
+                    {/* <HeroLabel text='Professional' /> */}
                 </div>
             </div>
 
             {/* Second Row */}
             <div className="flex gap-4 items-center w-full">
                 <div className="">
-                    <HeroLabel text='Secure' />
+                    {/* <HeroLabel text='Secure' /> */}
                 </div>
                 <div className="flex-grow text-center">
                     <Heading variant='xl'><span className='text-primary font-medium'>Illuminate Your Data's True Potential</span></Heading>
                 </div>
                 <div className="">
-                    <HeroLabel text='Optimized' />
+                    {/* <HeroLabel text='Optimized' /> */}
                 </div>
             </div>
 

@@ -7,7 +7,7 @@ import Image from '../common/Image'
 
 const HeroSection = () => {
   return (
-    <Container className='mt-36 mb-14 flex flex-col gap-14'>
+    <Container className='mt-24 mb-14 flex flex-col gap-14'>
     <HeroHeader/>
     <ImageFrame
       src="/images/hero_img.png"
